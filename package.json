@@ -1,0 +1,21 @@
+{
+  "name": "139openlist",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "移动云盘 CAS 文件的只读播放网关 — 专为 Cloudflare Workers 设计",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --passWithNoTests",
+    "test:cas": "tsx scripts/test-cas.ts",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250109.0",
+    "typescript": "^5.7.2",
+    "wrangler": "^3.99.0",
+    "tsx": "^4.19.2"
+  }
+}

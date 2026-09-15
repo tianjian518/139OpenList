@@ -1,0 +1,20 @@
+name = "139openlist"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# 可选：自定义域名（在 CF 面板给 Worker 绑定域名后注释掉）
+# routes = [
+#   { pattern = "139.example.com/*", custom_domain = true }
+# ]
+
+[vars]
+# 非敏感配置放这里；YUN139_AUTH 这类敏感值请用 `wrangler secret put` 设置
+YUN139_HOST = "https://personal-kd-njs.yun.139.com"
+YUN139_KIND = "personal"
+VIRTUALIZE_CAS = "true"
+AUTO_CLEANUP = "true"
+ALLOW_EXT = "mp4,mkv,ts,m2ts,avi,mov,wmv,flv,webm,rmvb,mp3,flac,aac"
+
+[observability]
+enabled = true

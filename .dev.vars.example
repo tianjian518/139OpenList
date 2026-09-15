@@ -1,0 +1,10 @@
+# 复制为 .dev.vars 并填入真实值（.dev.vars 已在 .gitignore 中）
+YUN139_AUTH="你的鉴权串"
+YUN139_ACCOUNT="你的手机号"
+YUN139_HOST="https://personal-kd-njs.yun.139.com"
+YUN139_KIND="personal"
+YUN139_CLOUD_ID=""
+YUN139_ROOT_ID=""
+VIRTUALIZE_CAS="true"
+AUTO_CLEANUP="true"
+ALLOW_EXT="mp4,mkv,ts,m2ts,avi,mov,wmv,flv,webm,rmvb,mp3,flac,aac"
